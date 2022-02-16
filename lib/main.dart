@@ -37,10 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
               color: Color.fromARGB(
                 //or with fromRGBO with fourth arg as _random.nextDouble(),
-                Random().nextInt(256),
-                Random().nextInt(256),
-                Random().nextInt(256),
-                Random().nextInt(256),
+                (Random().nextInt(256) - 1),
+                (Random().nextInt(256) - 1),
+                (Random().nextInt(256) - 1),
+                (Random().nextInt(256) - 1),
               ),
               child: const Center(
                 child: Text('Hey there!'),
